@@ -13,7 +13,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     end
 
   test "should get home" do
-    get hoe_path
+    get home_path
     assert_response :success
     assert_select "title", "Home | #{@base_title}"
   end
@@ -31,7 +31,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should get contact' do
-      get about_path
+      get contact_path
       assert_response :success
     assert_select "title", "Contact | #{@base_title}"
   end
